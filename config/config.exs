@@ -10,10 +10,10 @@ config :weliBE,
   ecto_repos: [WeliBE.Repo]
 
 # Configures the endpoint
-config :weliBE, WeliBEWeb.Endpoint,
+config :weliBE, Api.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "hSfDO+25pGizI6OWr3BFe/o8bQaJJ1S6xem8aGTYWhmQNIP/pmHrFgyxEkeT2/bH",
-  render_errors: [view: WeliBEWeb.ErrorView, accepts: ~w(html json)],
+  render_errors: [view: Api.ErrorView, accepts: ~w(html json)],
   pubsub: [name: WeliBE.PubSub,
            adapter: Phoenix.PubSub.PG2]
 

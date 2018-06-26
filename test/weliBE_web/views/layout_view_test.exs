@@ -1,3 +1,3 @@
-defmodule WeliBEWeb.LayoutViewTest do
-  use WeliBEWeb.ConnCase, async: true
+defmodule Api.LayoutViewTest do
+  use Api.ConnCase, async: true
 end

@@ -9,5 +9,7 @@ defmodule WeliBE.Repo.Migrations.CreateUser do
       add :password, :string
       add :token, :string
     end
+    create unique_index(:user, [:username]) 
   end
+ 
 end

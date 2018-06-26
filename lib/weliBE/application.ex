@@ -11,7 +11,7 @@ defmodule WeliBE.Application do
       # Start the Ecto repository
       supervisor(WeliBE.Repo, []),
       # Start the endpoint when the application starts
-      supervisor(WeliBEWeb.Endpoint, []),
+      supervisor(Api.Endpoint, []),
       # Start your own worker by calling: WeliBE.Worker.start_link(arg1, arg2, arg3)
       # worker(WeliBE.Worker, [arg1, arg2, arg3]),
     ]
@@ -25,7 +25,7 @@ defmodule WeliBE.Application do
   # Tell Phoenix to update the endpoint configuration
   # whenever the application is updated.
   def config_change(changed, _new, removed) do
-    WeliBEWeb.Endpoint.config_change(changed, removed)
+    Api.Endpoint.config_change(changed, removed)
     :ok
   end
 end

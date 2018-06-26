@@ -1,3 +1,3 @@
-defmodule WeliBEWeb.PageViewTest do
-  use WeliBEWeb.ConnCase, async: true
+defmodule Api.PageViewTest do
+  use Api.ConnCase, async: true
 end
