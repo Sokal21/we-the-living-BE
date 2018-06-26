@@ -1,4 +1,4 @@
-defmodule WeliBEWeb.ConnCase do
+defmodule Api.ConnCase do
   @moduledoc """
   This module defines the test case to be used by
   tests that require setting up a connection.
@@ -19,10 +19,10 @@ defmodule WeliBEWeb.ConnCase do
     quote do
       # Import conveniences for testing with connections
       use Phoenix.ConnTest
-      import WeliBEWeb.Router.Helpers
+      import Api.Router.Helpers
 
       # The default endpoint for testing
-      @endpoint WeliBEWeb.Endpoint
+      @endpoint Api.Endpoint
     end
   end
 

@@ -1,7 +1,7 @@
-defmodule WeliBEWeb.Endpoint do
+defmodule Api.Endpoint do
   use Phoenix.Endpoint, otp_app: :weliBE
 
-  socket "/socket", WeliBEWeb.UserSocket
+  socket "/socket", Api.UserSocket
 
   # Serve at "/" the static files from "priv/static" directory.
   #
@@ -37,7 +37,7 @@ defmodule WeliBEWeb.Endpoint do
     key: "_weliBE_key",
     signing_salt: "2x5lKUFV"
 
-  plug WeliBEWeb.Router
+  plug Api.Router
 
   @doc """
   Callback invoked for dynamically configuring the endpoint.
